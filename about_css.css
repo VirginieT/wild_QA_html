@@ -9,3 +9,7 @@ td {
 #abstract {
   background-color:rgb(200, 127, 100);
 }
+
+#copyright {
+  text-align: center;
+}
