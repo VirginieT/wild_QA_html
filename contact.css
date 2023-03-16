@@ -1,9 +1,12 @@
 :root{
-    --primary-color: white;
+    --firstColor: #0367A6;
+    --secondColor: #4BB2F2;
+    --thirdColor: #A0D3F2;
+    --fourthColor: #027373;
 }
 
 *{
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color);
+    background-color: var(--thirdColor);
 }
