@@ -1,0 +1,9 @@
+:root{
+    --primary-color: rgb(212, 255, 234);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
