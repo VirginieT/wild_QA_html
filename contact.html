@@ -30,52 +30,56 @@
   <p>Formulaire d'inscription</p>
   <hr>
 
-  <main>
-    <form>
-      <div>
-        <label for="fname">Nom</label>
-        <input type="text" name="fname" id="fname" placeholder="Renseignez votre nom">
-      </div>
-      <div>
-        <label for="lname">Prénom</label>
-        <input type="text" name="lname" id="lname" placeholder="Renseignez votre prénom">
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Renseignez votre email">
-      </div>
-      <div>
-        <label for="age">Âge</label>
-        <input type="number" name="age" id="age" placeholder="Renseignez votre âge">
-      </div>
-      <div>
-        <p>Est-ce que tu recommanderais le métier de Testeur Automaticien à un ami</p>
-        <input type="radio" name="yes" id="yes">
-        <label for="yes">Oui, évidemment</label>
-        <input type="radio" name="maybe" id="maybe">
-        <label for="maybe">Peut-être, je ne sais pas trop, c'est compliqué ...</label>
-        <input type="radio" name="no" id="no">
-        <label for="non">Non, pas du tout</label>
-      </div>
-      <div>
-        <input type="checkbox" name="" id="">
-        <label for="age">Cypress</label>
-        <input type="checkbox" name="" id="">
-        <label for="age">Postman</label>
-        <input type="checkbox" name="" id="">
-        <label for="age">Selenium</label>
-        <input type="checkbox" name="" id="">
-        <label for="age">EggPlant</label>
-      </div>
-      <div>
-        <label for="difficulty">Comment trouvez-vous HTML?</label>
-        <select name="difficulty" id="difficulty">
-          <option value="easy">Facile</option>
-          <option value="average">Moyen</option>
-          <option value="hard">Difficile</option>
-        </select>
-      </div>
-      </form>
+  <form>
+    <div>
+      <label for="fname">Nom</label>
+      <input type="text" name="fname" id="fname" placeholder="Renseignez votre nom">
+    </div>
+    <div>
+      <label for="lname">Prénom</label>
+      <input type="text" name="lname" id="lname" placeholder="Renseignez votre prénom">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Renseignez votre email">
+    </div>
+    <div>
+      <label for="age">Âge</label>
+      <input type="number" name="age" id="age" placeholder="Renseignez votre âge">
+    </div>
+    <div>
+      <p>Est-ce que tu recommanderais le métier de Testeur Automaticien à un ami</p>
+      <input type="radio" name="yes" id="yes">
+      <label for="yes">Oui, évidemment</label>
+      <input type="radio" name="maybe" id="maybe">
+      <label for="maybe">Peut-être, je ne sais pas trop, c'est compliqué ...</label>
+      <input type="radio" name="no" id="no">
+      <label for="non">Non, pas du tout</label>
+    </div>
+    <div>
+      <p>Quels frameworks d'automatisation de tests connaissez-vous ?</p>
+      <input type="checkbox" name="cypress" id="cypress">
+      <label for="cypress">Cypress</label>
+      <input type="checkbox" name="postman" id="postman">
+      <label for="postman">Postman</label>
+      <input type="checkbox" name="selenium" id="selenium">
+      <label for="selenium">Selenium</label>
+      <input type="checkbox" name="eggplant" id="eggplant">
+      <label for="eggplant">EggPlant</label>
+    </div>
+    <div>
+      <label for="difficulty">Comment trouvez-vous HTML?</label>
+      <select name="difficulty" id="difficulty">
+        <option value="easy">Facile</option>
+        <option value="average">Moyen</option>
+        <option value="hard">Difficile</option>
+      </select>
+
+    </div>
+    <div>
+      <label for="comments">Vos suggestions pour la formation</label>
+      <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+    </div>
 
   </main>
 
