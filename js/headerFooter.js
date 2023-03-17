@@ -6,8 +6,6 @@ $(document).ready(function () {
         <nav class="nav"> \
               <ul class="nav"> \
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html" title="index">Accueil</a></li> \
-                <li class="nav-item"><a class="nav-link" href="./about.html" title="profile">Profil</a></li> \
-                <li class="nav-item"><a class="nav-link" href="./tools.html" title="tools">Outils</a></li> \
                 <li class="nav-item"><a class="nav-link" href="./contact.html" title="contact">Contactez-nous</a></li> \
               </ul> \
               \
@@ -17,20 +15,20 @@ $(document).ready(function () {
   ');
 })
 
+console.log(typeof(null))
+
 $(document).ready(function () {
   $(".footer").append(' \
   <footer class="footer"> \
     <div> \
       <ul> \
         <li><a href="./index.html" title="index">Accueil</a></li> \
-        <li><a href="#" title="about">Profil</a></li> \
-        <li><a href="#" title="tools">Outils</a> \
+        <li><a href="#" title="contact-form">Contactez-nous</a></li> \
       </ul> \
     </div> \
     \
     <div> \
       <ul class="nav"> \
-          <li><a href="#" title="contact-form">Contactez-nous</a></li> \
           <li><a href="#" title="email">Email</a></li> \
           <li><a href="#" title="adress">Adresse</a></li> \
            <li><a href="#" title="phone">Téléphone</a></li> \
