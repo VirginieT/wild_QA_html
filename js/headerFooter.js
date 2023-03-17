@@ -24,6 +24,7 @@ $(document).ready(function () {
       <ul> \
         <li><a href="./index.html" title="index">Accueil</a></li> \
         <li><a href="#" title="contact-form">Contactez-nous</a></li> \
+        <li><p>©SAVIAD - Copyright 2023</p></li> \
       </ul> \
     </div> \
     \
@@ -37,9 +38,6 @@ $(document).ready(function () {
       </ul> \
     </div> \
       \
-    <div id="copyrigth"> \
-      <p>©SAVIAD - Copyright 2023</p> \
-    </div> \
   </footer> \
   ');
 })
