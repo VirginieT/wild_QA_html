@@ -163,8 +163,11 @@ console.log(surfaceTriangle(2, 4))
 
 // EXERCICE 2
 let factorize = function(number) {
-  if (number <= 1) return 1;
-  else return number * factorize(number-1);
+  if (number <= 1) {
+    return 1;}
+  else {
+    return number * factorize(number-1);
+  }
 };
 
 console.log(factorize(5));
