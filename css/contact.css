@@ -13,7 +13,7 @@ form{
     display: flex;
     flex-direction: column;
     border-radius:7px;
-    font-size: 20px;
+    font-size: 1.1rem;
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
     padding: 1.5rem;
     margin: 9rem 0rem 7rem 0;
@@ -23,7 +23,6 @@ form{
 h1{
     padding: 1rem;
     font-size: 2rem;
-    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -33,21 +32,52 @@ input {
 }
 
 p{
-    margin: 10px 0px 0px 0px;
+    margin: 4px 0px 0px 0px;
+    font-size: 1.2rem;
+}
+
+.recommandation{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.recommandation p{
+    order: -1;
+    flex : 1 0 100%;
+}
+.recommandation div{
+    margin: 0px 0px 0px 0px;
+}
+
+.frameworks{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.frameworks p{
+    order: -1;
+    flex : 1 0 100%;
+}
+.frameworks div{
+    margin: 0px 0px 0px 0px;
+}
+
+label[for=difficulty]{
+    font-size: 1.2rem;
+}
+label[for=comments]{
+    font-size: 1.2rem;
 }
 
 #comments{
     height: 100px;
     width: 80%;
     resize: none;
+    margin: 5px 0px 0px 0px;
 }
 
-#submitButton{
-    display: flex;
-    justify-content: center;
-}
 #submitButton:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform .2s;
 }
 
