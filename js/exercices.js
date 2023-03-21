@@ -6,46 +6,66 @@ function exo1(base,height){
   return log
 }
 
-function exo2(n1){
-  log = ""
-
-  return log
+function exo2(number){
+  let result = 1;
+  for (let i = 1;i <= number;i++) {
+    result *= i;
+  }
+  return result;
 }
 
-function exo3(n1,n2,n3){
-  log = ""
-
-  return log
+function exo3(a,b,c){
+  console.log("a : "+a+" b : "+b+" c : "+c)
+  if (a > b && a > c) {
+      return a;
+  } else if (b > a && b > c) {
+      return b;
+  } else if (c > a && c > b) {
+      return c;
+  }
 }
 
-function exo4(){
-  log = ""
-
-  return log
+function exo4(tableau){
+  return tableau[tableau.length - 1];
 }
 
-function exo5(){
-  log = ""
-
-  return log
+function exo5(str1,str2){
+  return str1 + " | " + str2 ;
 }
 
-function exo6(){
-  log = ""
-
-  return log
+function exo6(str1, str2){
+  if (str1.length === str2.length) {
+    return "true";
+  }
+  return "false";
 }
 
-function exo7(){
-  log = ""
-
-  return log
+function exo7(number){
+  if (number % 2 === 0) {
+   return "pair";
+ }
+ return "impair";
 }
 
-function exo8(){
-  log = ""
-
-  return log
+function exo8(country){
+  switch (country) {
+    case "France":
+      return "Paris";
+    case "Allemagne":
+      return "Berlin";
+    case "Italie":
+      return "Rome";
+    case "Maroc":
+      return "Rabat";
+    case "Espagne":
+      return "Madrid";
+    case "Portugal":
+      return "Lisbonne";
+    case "Angleterre":
+      return "Londres";
+    default:
+      return "Inconnu";
+  }
 }
 
 function exo9(n1, n2, s1){
@@ -71,30 +91,31 @@ function exo10(){
 $(document).ready(function(){
   $("#formEx1").submit(function(e) {
     e.preventDefault();
-    n1 = $("#formEx1").children("#n1").val()
-    n2 = $("#formEx1").children("#n2").val()
+    n1 = parseInt($("#formEx1").children("#n1").val())
+    n2 = parseInt($("#formEx1").children("#n2").val())
     $('#exo1').empty();
     $("#exo1").append(exo1(n1,n2));
   });
   $("#formEx2").submit(function(e) {
     e.preventDefault();
-    n1 = $("#formEx2").children("#n1").val()
+    n1 = parseInt($("#formEx2").children("#n1").val())
     $('#exo2').empty();
     $("#exo2").append(exo2(n1));
   });
   $("#formEx3").submit(function(e) {
     e.preventDefault();
-    n1 = $("#formEx3").children("#n1").val()
-    n2 = $("#formEx3").children("#n2").val()
-    n3 = $("#formEx3").children("#n3").val()
+    n1 = parseInt($("#formEx3").children("#n1").val())
+    n2 = parseInt($("#formEx3").children("#n2").val())
+    n3 = parseInt($("#formEx3").children("#n3").val())
     $('#exo3').empty();
     $("#exo3").append(exo3(n1,n2,n3));
   });
   $("#formEx4").submit(function(e) {
     e.preventDefault();
     t1 = $("#formEx4").children("#t1").val()
+    tab1 = t1.replace('[', '').replace(']', '').split(',')
     $('#exo4').empty();
-    $("#exo4").append(exo4(t1));
+    $("#exo4").append(exo4(tab1));
   });
   $("#formEx5").submit(function(e) {
     e.preventDefault();
@@ -112,7 +133,7 @@ $(document).ready(function(){
   });
   $("#formEx7").submit(function(e) {
     e.preventDefault();
-    n1 = $("#formEx7").children("#n1").val()
+    n1 = parseInt($("#formEx7").children("#n1").val())
     $('#exo7').empty();
     $("#exo7").append(exo7(n1));
   });
@@ -124,8 +145,8 @@ $(document).ready(function(){
   });
   $("#formEx9").submit(function(e) {
     e.preventDefault();
-    n1 = $("#formEx9").children("#n1").val();
-    n2 = $("#formEx9").children("#n2").val();
+    n1 = parseInt($("#formEx9").children("#n1").val());
+    n2 = parseInt($("#formEx9").children("#n2").val());
     s1 = $("#formEx9").children("#s1").val();
     $('#exo9').empty();
     $("#exo9").append(exo9(n1,n2,s1));
