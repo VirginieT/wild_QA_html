@@ -32,7 +32,7 @@ $(document).ready(function () {
       <ul class="nav"> \
           <li><a href="#" title="email">Email</a></li> \
           <li><a href="#" title="adress">Adresse</a></li> \
-           <li><a href="#" title="phone">Téléphone</a></li> \
+          <li><a href="#" title="phone">Téléphone</a></li> \
           <li><a href="#" title="socials">Réseaux sociaux</a></li> \
           <li><a href="#" title="legal">Mentions légales</a></li> \
       </ul> \

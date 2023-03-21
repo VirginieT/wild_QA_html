@@ -1,0 +1,16 @@
+main {
+  padding: 90px 100px 100px 100px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+p{
+  margin: 4px 0px 4px 0px;
+}
+
+input {
+  margin: 4px 0px 4px 0px;
+}

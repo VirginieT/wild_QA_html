@@ -9,3 +9,7 @@ td {
 #abstract {
   background-color:rgb(200, 127, 100);
 }
+
+main {
+  padding: 90px 30px 150px 30px;
+}
