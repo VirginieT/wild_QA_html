@@ -117,10 +117,15 @@ function exo9(n1, n2, s1){
   return log
 }
 
-function exo10(){
-  log = ""
-
-  return log
+function exo10(string){
+  let v = ["a", "e", "i", "o", "u", "y"];
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (v.includes(string[i])) {
+      count++;
+    }
+  }
+  return count;
 }
 
 
