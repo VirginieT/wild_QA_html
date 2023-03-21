@@ -10,8 +10,8 @@ console.log(triangleSurface(10,5));
 // exo 2
 function factor(number) {
       let result = 1;
-      for (let i = 1;  
-        i <= number;  
+      for (let i = 1;
+        i <= number;
         i++) {
         result *= i;
       }
@@ -152,7 +152,7 @@ function countV(string) {
 console.log(countV("we are the champions"));
 
 
-// PARTIE SAMUEL 
+// PARTIE SAMUEL
 
 // EXERCICE 1
 let surfaceTriangle = function(base, height) {
@@ -178,7 +178,7 @@ let greatest = function(int1, int2, int3){
     } else if (int2 > int1 && int2 > int3){
       return console.log("L'entier le plus grand est : " + int2);
     } else {
-      return console.log("L'entier le plus grand est : " + int3);      
+      return console.log("L'entier le plus grand est : " + int3);
     }
   } else {
     console.log("Certains entiers sont égaux");
@@ -269,7 +269,7 @@ let calcul = function(){
   let n2 = parseFloat(prompt("Nombre 2"));
   let operator = prompt("Quel est le signe de l'opération ?");
   switch(operator){
-    case "+": 
+    case "+":
       return n1+n2;
       break;
     case '-':
@@ -278,7 +278,7 @@ let calcul = function(){
     case '*':
       return n1*n2;
       break;
-    case '/': 
+    case '/':
       return n2 == 0 ? "INTERDIT" : (n1 / n2);
     default:
       return "Opérateur inconnu"
@@ -302,3 +302,17 @@ let numberOfVoyelles = function(mot){
 };
 
 console.log(numberOfVoyelles("manifestations"))
+
+//PARTIE ADRIEN
+function exo9(n1, n2, s1){
+  log = ""
+
+  switch(s1){
+    case "add":log = log + n1 + " + " + n2 +" = "+(parseInt(n1)+parseInt(n2));break;
+    case "sub":log = log + n1 + " - " + n2 +" = "+(n1-n2);break;
+    case "mul":log = log + n1 + " x " + n2 +" = "+(n1*n2);break;
+    case "div":log = log + n1 + " / " + n2 +" = "+(n2 == 0 ? "unknown" : (n1 / n2));
+  }
+
+  return log
+}
