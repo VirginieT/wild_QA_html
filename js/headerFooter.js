@@ -7,6 +7,7 @@ $(document).ready(function () {
               <ul class="nav"> \
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html" title="index">Accueil</a></li> \
                 <li class="nav-item"><a class="nav-link" href="./contact.html" title="contact">Contactez-nous</a></li> \
+                <li class="nav-item"><a class="nav-link" href="./jsExamples.html" title="exercicesJs">Exemples d\'exercices</a></li> \
               </ul> \
               \
         </nav> \
@@ -21,7 +22,8 @@ $(document).ready(function () {
     <div> \
       <ul> \
         <li><a href="./index.html" title="index">Accueil</a></li> \
-        <li><a href="#" title="contact-form">Contactez-nous</a></li> \
+        <li><a href="./contact.html" title="contact-form">Contactez-nous</a></li> \
+        <li><a href="./jsExamples.html" title="exercicesJs">Contactez-nous</a></li> \
         <li><p>©SAVIAD - Copyright 2023</p></li> \
       </ul> \
     </div> \
