@@ -82,11 +82,43 @@ $(document).ready(function(){
     n3 = $("#formEx3").children("#n3").val()
     $("#exo3").append(exo3(n1,n2,n3));
   });
-  $("#exo4").append(exo4());
-  $("#exo5").append(exo5());
-  $("#exo6").append(exo6());
-  $("#exo7").append(exo7());
-  $("#exo8").append(exo8());
-  $("#exo9").append(exo9());
-  $("#exo10").append(exo10());
+  $("#formEx4").submit(function(e) {
+    e.preventDefault();
+    t1 = $("#formEx4").children("#t1").val()
+    $("#exo4").append(exo4(t1));
+  });
+  $("#formEx5").submit(function(e) {
+    e.preventDefault();
+    t1 = $("#formEx5").children("#t1").val()
+    t2 = $("#formEx5").children("#t2").val()
+    $("#exo5").append(exo5(t1,t2));
+  });
+  $("#formEx6").submit(function(e) {
+    e.preventDefault();
+    t1 = $("#formEx6").children("#t1").val()
+    t2 = $("#formEx6").children("#t2").val()
+    $("#exo6").append(exo6(t1,t2));
+  });
+  $("#formEx7").submit(function(e) {
+    e.preventDefault();
+    n1 = $("#formEx7").children("#n1").val()
+    $("#exo7").append(exo7(n1));
+  });
+  $("#formEx8").submit(function(e) {
+    e.preventDefault();
+    t1 = $("#formEx8").children("#t1").val()
+    $("#exo8").append(exo8(t1));
+  });
+  $("#formEx9").submit(function(e) {
+    e.preventDefault();
+    n1 = $("#formEx9").children("#n1").val()
+    n2 = $("#formEx9").children("#n2").val()
+    option = "add"
+    $("#exo9").append(exo9(n1,n2,option));
+  });
+  $("#formEx10").submit(function(e) {
+    e.preventDefault();
+    t1 = $("#formEx10").children("#t1").val()
+    $("#exo10").append(exo10(t1));
+  });
 })
