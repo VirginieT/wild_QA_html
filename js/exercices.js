@@ -6,7 +6,7 @@ function exo1(base,height){
   return log
 }
 
-function exo2(number){
+function exo2I(number){
   let result = 1;
   for (let i = 1;i <= number;i++) {
     result *= i;
@@ -14,8 +14,12 @@ function exo2(number){
   return result;
 }
 
+function exo2R(number){
+  if (number <= 1) return 1;
+  else return number * exo2R(number-1);
+}
+
 function exo3(a,b,c){
-  console.log("a : "+a+" b : "+b+" c : "+c)
   if (a > b && a > c) {
       return a;
   } else if (b > a && b > c) {
@@ -38,6 +42,38 @@ function exo6(str1, str2){
     return "true";
   }
   return "false";
+}
+
+function ex6Button() {
+  let num1 = parseFloat(prompt("Entrez un premier nombre "));
+  let num2 = parseFloat(prompt("Entrez un deuxième nombre "));
+  let operation = prompt("Entrez une opération (+, -, *, /) ");
+  let resultat;
+  switch (operation) {
+    case "+":
+      resultat = num1 + num2;
+      break;
+    case "-":
+      resultat = num1 - num2;
+      break;
+    case "*":
+      resultat = num1 * num2;
+      break;
+    case "/":
+      if (num2 === 0) {
+        resultat = "unknown";
+      } else {
+        resultat = num1 / num2;
+      }
+      break;
+    default:
+      resultat = "opération non valide";
+  }
+  if (resultat !== "unknown") {
+    console.log(num1 + " " + operation + " " + num2 + " = " + resultat);
+  } else {
+    console.log("Le résultat est inconnu car vous avez divisé par zéro.");
+  }
 }
 
 function exo7(number){
@@ -96,11 +132,17 @@ $(document).ready(function(){
     $('#exo1').empty();
     $("#exo1").append(exo1(n1,n2));
   });
-  $("#formEx2").submit(function(e) {
+  $("#formEx2I").submit(function(e) {
     e.preventDefault();
-    n1 = parseInt($("#formEx2").children("#n1").val())
-    $('#exo2').empty();
-    $("#exo2").append(exo2(n1));
+    n1 = parseInt($("#formEx2I").children("#n1").val())
+    $('#exo2I').empty();
+    $("#exo2I").append(exo2I(n1));
+  });
+  $("#formEx2R").submit(function(e) {
+    e.preventDefault();
+    n1 = parseInt($("#formEx2R").children("#n1").val())
+    $('#exo2R').empty();
+    $("#exo2R").append(exo2R(n1));
   });
   $("#formEx3").submit(function(e) {
     e.preventDefault();
@@ -130,6 +172,9 @@ $(document).ready(function(){
     t2 = $("#formEx6").children("#t2").val()
     $('#exo6').empty();
     $("#exo6").append(exo6(t1,t2));
+  });
+  $('#ex6Button').click(function(){
+    ex6Button();
   });
   $("#formEx7").submit(function(e) {
     e.preventDefault();
