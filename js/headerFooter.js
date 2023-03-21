@@ -15,8 +15,6 @@ $(document).ready(function () {
   ');
 })
 
-console.log(typeof(null))
-
 $(document).ready(function () {
   $(".footer").append(' \
   <footer class="footer"> \
