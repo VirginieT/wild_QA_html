@@ -6,34 +6,49 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-radius:7px;
-    margin: 10% 5% 17% 5%;
-    padding: 1rem;
 }
 
 form{
+    background-color: #94d3fa;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     border-radius:7px;
     font-size: 20px;
-    background-color: white;
-    border-radius: 10px;
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 1.5rem;
+    margin: 9rem 0rem 7rem 0;
+    width: 30%;
 }
 
-.top{
+h1{
     padding: 1rem;
-}
-.top h1{
     font-size: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
+}
+
+input {
+    margin: 10px 0px 0px 0px;
+    padding: 4px;
 }
 
 p{
     margin: 10px 0px 0px 0px;
+}
+
+#comments{
+    height: 100px;
+    width: 80%;
+    resize: none;
+}
+
+#submitButton{
+    display: flex;
+    justify-content: center;
+}
+#submitButton:hover{
+    transform: scale(1.2);
+    transition: transform .2s;
 }
 
 

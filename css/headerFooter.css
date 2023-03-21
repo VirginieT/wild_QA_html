@@ -1,14 +1,13 @@
 :root{
   --firstColor: #0367A6;
   --secondColor: #4BB2F2;
-  --thirdColor: #A0D3F2;
+  --thirdColor: #c9e6f8;
   --fourthColor: #027373;
 }
 
 *{
   margin: 0;
   padding: 0;
-  background-color: var(--thirdColor);
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
