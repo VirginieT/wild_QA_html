@@ -56,6 +56,10 @@ nav ul li a {
     padding: 15px ;
     text-decoration: none;
 }
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
 
 a{
     background-color: var(--firstColor);
@@ -71,7 +75,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    background-color: var(--fourthColor);
+    background-color: var(--thirdColor);
 }
 
 main{
